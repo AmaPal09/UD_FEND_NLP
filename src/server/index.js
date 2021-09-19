@@ -41,3 +41,12 @@ app.get('/', (req,res) => {
 	console.log("Get request");
 	res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
 });
+
+//Process the form
+app.post('/artProcess', async(req, res) => {
+	const articleURL = req.body.artURL;
+	const analysisResult = "You entered this " + articleURL + "URL";
+	try {
+		console.log(analysisResult);
+	}
+})
