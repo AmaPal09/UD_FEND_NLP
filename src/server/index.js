@@ -42,11 +42,15 @@ app.get('/', (req,res) => {
 	res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
 });
 
-//Process the form
-app.post('/artProcess', async(req, res) => {
-	const articleURL = req.body.artURL;
-	const analysisResult = "You entered this " + articleURL + "URL";
-	try {
-		console.log(analysisResult);
-	}
+// Process the form
+app.post('/artProcess', (req, res) => {
+	console.log("req.body from client ===", req.body);
+	// const articleURL = req.body;
+	// const analysisResult = "You entered this " + articleURL + "URL";
+	// console.log(analysisResult);
+	const successMsg = "Post request receieved successfully";
+	const results = {
+		successMsg
+	};
+	res.send(results);
 })
