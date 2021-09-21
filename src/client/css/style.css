@@ -1,0 +1,39 @@
+/*Styles for the webapp*/
+@import url(var4main.css);
+
+p {
+	font-family: var(--regular-text-family);
+	font-size: var(--regular-text-size);
+	font-weight: var(--regular-text-weight);
+}
+
+h1 {
+	font-family: var(--page-title-family);
+	font-size: var(--page-title-size);
+	font-weight: var(--page-title-weight);
+}
+
+h2 {
+	font-family: var(--regular-title-family);
+	font-size: var(--regular-title-size);
+	font-weight: var(--regular-title-weight);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  /*color: var(--special-text-color);*/
+  color: black;
+  opacity: 0.7; /* Firefox */
+  border: none;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  /*color: var(--special-text-color);*/
+  color: black;
+  opacity: 0.7;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  /*color: var(--special-text-color);*/
+  color: black;
+  opacity: 0.7;
+}

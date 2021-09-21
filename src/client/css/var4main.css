@@ -1,0 +1,48 @@
+/*Get fonts from Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,400;1,700&family=Vollkorn:wght@600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 0.03rem;
+	/*color: var(--regular-text-color);*/
+}
+
+:root {
+	/*FONTS*/
+	/*font-sizes*/
+	--page-title-size: 2.5rem;
+	--regular-title-size: 1.5rem;
+	--regular-text-size: 1rem;
+
+	/*font-family*/
+	--page-title-family: 'Vollkorn', serif;
+	--regular-title-family: 'Roboto', Sans-serif;
+	--regular-text-family: 'Roboto', serif;
+	--footer-text-family: 'Roboto', serif;
+	--footer-copyrights-family: 'Roboto', serif;
+
+	/*font-weight*/
+	--page-title-weight: 600;
+	--regular-title-weight: 700;
+	--regular-text-weight: 400;
+	--footer-text-weight: 300;
+	--footer-copyrights-weight: 100;
+
+	/*Italics options*/
+	/*ROBOTO Regular 400 italic
+	ROBOTO Bold 700 italic
+	*/
+
+	/*COLOURS*/
+	/*--page-title-color: #f4f312;
+	--regular-title-color: #f4f312;
+	--regular-text-color: #fffeff;
+	--special-text-color: #07151a;
+	--special-background-color: #ebf5fa;
+	--shadow-color: #215d78;
+	--error-color: #b4324b;
+*/
+}
