@@ -58,7 +58,12 @@ function submitForm(e) {
 }
 
 
-
+/*
+* isValidURL FUNCTION
+* @description: Validates if the user input is an URL
+* @param {string} inputURL: url provided by the user,
+* @returns {Boolean}: true if it an URL, false if it is not
+*/
 function isValidURL(inputURL) {
 	console.log("Validate URL: ", inputURL);
  	const pattern = new RegExp('^((ft|htt)ps?:\\/\\/)?'+ // protocol
