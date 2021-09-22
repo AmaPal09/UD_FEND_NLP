@@ -37,6 +37,20 @@
 	*/
 
 	/*COLOURS*/
+	--primary-accent-color-1: #204ecf;
+	--primary-accent-color-light: #dbe3f9;
+	--primary-accent-color-dark: #3b5998;
+	--primary-accent-color-2: #183b9d;
+	--error-accent-color: #ee5253;
+	--success-accent-color: #00e693;
+	--attention-accent-color: #f46505;
+
+	--secondary-color: #000000;
+
+	--background-color-light: #d8d9dc;
+	--background-color-medium: #455065;
+	--background-color-dark: #262d3d;
+
 	/*--page-title-color: #f4f312;
 	--regular-title-color: #f4f312;
 	--regular-text-color: #fffeff;

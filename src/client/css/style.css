@@ -1,6 +1,10 @@
 /*Styles for the webapp*/
 @import url(var4main.css);
 
+.main__page {
+	padding: 0.8rem 0.4rem 0 0.4rem;
+}
+
 p {
 	font-family: var(--regular-text-family);
 	font-size: var(--regular-text-size);
@@ -11,6 +15,7 @@ h1 {
 	font-family: var(--page-title-family);
 	font-size: var(--page-title-size);
 	font-weight: var(--page-title-weight);
+	color: var(--primary-accent-color-1);
 }
 
 h2 {
@@ -19,6 +24,19 @@ h2 {
 	font-weight: var(--regular-title-weight);
 }
 
+label {
+    font-family: var(--regular-text-family);
+    font-size: var(--regular-text-size);
+    font-weight: var(--regular-text-weight);
+}
+
+main {
+	background-color: var(--background-color-light);
+}
+
+footer {
+	background-color: var(--background-color-dark);
+}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   /*color: var(--special-text-color);*/
   color: black;
