@@ -23,9 +23,9 @@ Please see Usage Section
 
 ## DEVELOPMENT TODO
 - [x] Add a README.md
-- [ ] Select and add fonts
-- [ ] Create a color scheme
-- [ ] Add CSS file with fonts and colors
+- [x] Select and add fonts
+- [x] Create a color scheme
+- [x] Add CSS file with fonts and colors
 - [ ] Add basic CSS layout
 - [ ] Install Webpack
 - [ ] Setup Webpack config file
