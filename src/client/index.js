@@ -1,4 +1,4 @@
-import { isValidURL } from './js/index.js'
+import { isValidURL } from './js/validateURL'
 import { submitForm } from './js/index.js'
 import { sendURLToServer } from './js/index.js'
 
