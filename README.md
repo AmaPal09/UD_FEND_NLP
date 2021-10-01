@@ -28,8 +28,8 @@ Please see Usage Section
 - [x] Create a color scheme
 - [x] Add CSS file with fonts and colors
 - [ ] Add basic CSS layout
-- [ ] Install Webpack
-- [ ] Setup Webpack config file
+- [x] Install Webpack
+- [x] Setup Webpack config file
 - [ ] Create API credential
 - [ ] Test API using postman
 - [ ] Add creds to .env file

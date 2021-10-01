@@ -81,3 +81,7 @@ function isValidURL(inputURL) {
 event listener
 */
 artProcess.addEventListener('click', submitForm);
+
+export { isValidURL }
+export { submitForm }
+export { sendURLToServer }
