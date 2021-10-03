@@ -27,7 +27,8 @@ app.use(cors());
 const port = 3000;
 
 // Serve static files from website folder and connect them with the server
-app.use(express.static('src/client'));
+// app.use(express.static('src/client'));
+app.use(express.static('dist'));
 
 
 // Keep the server running and listen for activity
@@ -39,7 +40,8 @@ app.listen(port, ()=>{
 //Launch the homepage
 app.get('/', (req,res) => {
 	console.log("Get request");
-	res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
+	// res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
+	res.sendFile('dist/index.html');
 });
 
 // Process the form
