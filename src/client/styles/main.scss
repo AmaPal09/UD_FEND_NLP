@@ -4,5 +4,28 @@ body {
 	background-color: $background-color-light;
 	color: $primary-accent-color-1;
 	height: 100vh;
+	font-family: $regular-text-family;
+	font-size: $regular-title-size;
+	font-weight: $regular-text-weight;
+	margin: 0;
+}
+
+header {
+	background-color: $background-color-medium;
+	color: $primary-accent-color-dark;
+
+	.main__heading {
+		font-family: $page-title-family;
+		font-size: $page-title-size;
+		font-weight: $page-title-weight;
+		padding: 0.8rem;
+		display: flex;
+		align-content: center;
+
+		&:hover {
+			color: $attention-accent-color;
+		}
+	}
+
 
 }
