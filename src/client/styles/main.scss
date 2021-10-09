@@ -101,3 +101,18 @@ header {
 		}
 	}
 }
+
+footer {
+	background-color: $background-color-medium;
+	color: $primary-accent-color-dark;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+.copyrights {
+	&__statement {
+		font-size: $footer-copyrights-size;
+		font-weight: $footer-copyrights-weight;
+	}
+}
