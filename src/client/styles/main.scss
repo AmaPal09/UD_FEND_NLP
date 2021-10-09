@@ -2,7 +2,7 @@
 
 body {
 	background-color: $background-color-light;
-	color: $primary-accent-color-1;
+	color: $primary-accent-color-dark;
 	height: 100vh;
 	font-family: $regular-text-family;
 	font-size: $regular-title-size;
@@ -11,6 +11,8 @@ body {
 }
 
 header {
+	height: 10vh;
+	width: 100vw;
 	background-color: $background-color-medium;
 	color: $primary-accent-color-dark;
 
@@ -26,6 +28,76 @@ header {
 			color: $attention-accent-color;
 		}
 	}
+}
 
+.btn {
+	background-color: $primary-accent-color-1;
+	color: $primary-accent-color-light;
+	border: none;
+	padding: 0.4rem 0.8rem;
+	text-decoration: none;
+	cursor: pointer;
+	// margin: 0.4rem 0.2rem;
+}
 
+.content__div {
+	padding: 0 0 0.8rem 0;
+}
+
+.body__content {
+
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	section {
+		padding: 0 0.8rem 1.2rem 0.8rem;
+	}
+	.sub__heading {
+		font-family: $regular-title-family;
+		font-size: $regular-title-size;
+		font-weight: $regular-title-weight;
+		color: $primary-accent-color-1;
+	}
+
+	.article__process__form {
+		.article__form {
+			input {
+				width: 50vw;
+				padding: 0.4rem 0.8rem;
+				margin: 0 0 0.4rem 0;
+				box-sizing: border-box;
+				border: 2px solid $background-color-dark;
+				background-color: $background-color-medium;
+				color: $primary-accent-color-dark;
+
+				&:focus {
+					background-color: $background-color-dark;
+					color: $primary-accent-color-light;
+				}
+			}
+
+			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $primary-accent-color-dark;
+				opacity: 0.7; /* Firefox */
+				border: none;
+			}
+
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				color: $primary-accent-color-dark;
+				opacity: 0.7;
+			}
+
+			::-ms-input-placeholder { /* Microsoft Edge */
+				color: $primary-accent-color-dark;
+				opacity: 0.7;
+			}
+
+			.submitBtn {
+				width: 50vw;
+			}
+		}
+	}
 }
