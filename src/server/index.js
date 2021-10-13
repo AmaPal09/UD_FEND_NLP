@@ -1,5 +1,9 @@
 //Server side JS code
 
+// GLOBAL VARIABLES
+const API = 'MY_API_URL';
+const KEY = 'MY_API_KEY';
+
 /*
 * ALL REQUIRED PACKAGES
 */
@@ -9,9 +13,12 @@ const express = require('express');
 const cors = require('cors');
 //Body parser to parse JSON
 const bodyParser = require('body-parser');
+//fetch command to access API
+const fetch = require('node-fetch');
 
 // Start and instance of the app
 const app = express();
+
 
 //Configure express to use body-parser as middle-ware
 app.use(bodyParser.urlencoded({extended: false}));
@@ -45,14 +52,69 @@ app.get('/', (req,res) => {
 });
 
 // Process the form
-app.post('/artProcess', (req, res) => {
+app.post('/artProcess', async(req, res) => {
 	console.log("req.body from client ===", req.body);
 	// const articleURL = req.body;
 	// const analysisResult = "You entered this " + articleURL + "URL";
 	// console.log(analysisResult);
+	const reqData = req.body;
+	console.log('url', reqData);
+
+	const analysisResponse = await fetchAnalysis(reqData.arturl)
+	try {
+		sendResponse(analysisResponse, res);
+	}catch(error) {
+		console.log('error', error);
+	}
+
+
+});
+
+
+function sendResponse(analysisResponse, res) {
+	console.log("sendResponse function");
+	// console.log("analysis Response: ", analysisResponse);
 	const successMsg = "Post request receieved successfully";
 	const results = {
 		successMsg
 	};
 	res.send(results);
-})
+}
+
+
+const fetchAnalysis = async (inurl = '') => {
+	console.log("enter fetchAnalysis");
+	console.log(inurl);
+	const formData = {
+		key: KEY,
+		url: inurl,
+		lang: 'auto'
+	}
+
+	const requestOptions = {
+		method: 'POST',
+		body: formData,
+		redirect: 'follow'
+	};
+
+	// const response = await fetch(API, requestOptions)
+	// const response = await fetch(API, {method: 'POST', body: formData})
+	console.log(`${API}?key=${KEY}&url=${inurl}&lang=auto`);
+	const response = await fetch( `${API}?key=${KEY}&url=${inurl}&lang=auto`, {method: 'POST'})
+
+
+	try {
+		console.log("Processing response");
+		const newData = await response.json();
+		console.log(newData.status);
+		console.log(newData.model);
+		console.log(newData.score_tag);
+		console.log(newData.agreement);
+		console.log(newData.subjectivity);
+		console.log(newData.confidence);
+		console.log(newData.irony);
+		return newData;
+	}catch(error) {
+		console.log("error", error);
+	}
+}
