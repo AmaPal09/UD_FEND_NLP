@@ -1,9 +1,4 @@
 //Server side JS code
-
-// GLOBAL VARIABLES
-const API = 'MY_API_URL';
-const KEY = 'MY_API_KEY';
-
 /*
 * ALL REQUIRED PACKAGES
 */
@@ -13,8 +8,16 @@ const express = require('express');
 const cors = require('cors');
 //Body parser to parse JSON
 const bodyParser = require('body-parser');
+//Environment variables
+const dotenv = require('dotenv');
 //fetch command to access API
 const fetch = require('node-fetch');
+
+//configure env variables
+dotenv.config();
+// GLOBAL VARIABLES
+const SENTIMENT_API = 'https://api.meaningcloud.com/sentiment-2.1';
+const SENTIMENT_API_KEY = process.env.SENTIMENT_API_KEY;
 
 // Start and instance of the app
 const app = express();
@@ -86,7 +89,7 @@ const fetchAnalysis = async (inurl = '') => {
 	console.log("enter fetchAnalysis");
 	console.log(inurl);
 	const formData = {
-		key: KEY,
+		// key: KEY,
 		url: inurl,
 		lang: 'auto'
 	}
@@ -99,9 +102,8 @@ const fetchAnalysis = async (inurl = '') => {
 
 	// const response = await fetch(API, requestOptions)
 	// const response = await fetch(API, {method: 'POST', body: formData})
-	console.log(`${API}?key=${KEY}&url=${inurl}&lang=auto`);
-	const response = await fetch( `${API}?key=${KEY}&url=${inurl}&lang=auto`, {method: 'POST'})
-
+	console.log(`${SENTIMENT_API}?key=${SENTIMENT_API_KEY}&url=${inurl}&lang=auto`);
+	const response = await fetch( `${SENTIMENT_API}?key=${SENTIMENT_API_KEY}&url=${inurl}&lang=auto`, {method: 'POST'})
 
 	try {
 		console.log("Processing response");
