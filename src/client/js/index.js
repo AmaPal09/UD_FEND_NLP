@@ -1,5 +1,6 @@
 // Gloal variables
 import {isValidURL} from './validateURL'
+import {printResult} from './printResults'
 
 console.log("js added");
 //Vars for user input
@@ -27,6 +28,8 @@ const sendURLToServer = async (url = '', data = {}) => {
 		try {
 			const results = await response.json();
 			console.log(results);
+			printResult(results);
+
 		}catch(error){
 			console.log("error", error);
 		}
