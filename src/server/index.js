@@ -82,10 +82,11 @@ function sendResponse(analysisResponse, res) {
 	console.log("sendResponse function");
 	// console.log("analysis Response: ", analysisResponse);
 	const successMsg = "Post request receieved successfully";
-	const results = {
-		successMsg
-	};
-	res.send(results);
+	// const results = {
+	// 	successMsg
+	// };
+	// res.send(results);
+	res.send(analysisResponse);
 }
 
 
