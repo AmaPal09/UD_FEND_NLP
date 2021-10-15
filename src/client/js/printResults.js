@@ -44,39 +44,47 @@ function printResult(analysisResponse) {
 	}
 
 	else if (analysisResponse.status.code === '105') {
-		const errorMsg = "Resource access denied. \nThe link you have provided denied permission" +
-						 "to analyse its content";
+		const errorMsg = "Resource access denied. \nThe link you" +
+							" have provided denied permissionto" +
+						 	" analyse its content.";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 	else if (analysisResponse.status.code === '103') {
-		const errorMsg = "Request too large. \nThe article you are trying to analyse is bigger" +  				" than 50000 words. Please provide a smaller article";
+		const errorMsg = "Request too large. \nThe article you are" +
+							" trying to analyse is bigger than" +
+							" 50000 words. Please provide a smaller" +
+							" article.";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 	else if (analysisResponse.status.code === '204') {
-		const errorMsg = "Resource not compatible for the language automatically identified" +
-						" for the text. \nLanguage automatically detected does not match" +
-						" analytical models";
+		const errorMsg = "Resource not compatible for the language" +
+							" automatically identified for the" +
+							" text. \nLanguage automatically detected" +
+							" does not match analytical models.";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 	else if (analysisResponse.status.code === '205') {
 		const errorMsg = "Language not supported." +
-						 "\nLanguage detected not supported by the API";
+						 	"\nLanguage detected not supported by" +
+						 	" the API.";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 	else if (analysisResponse.status.code === '212') {
 		const errorMsg = "No content to analyze." +
-						 "\nNo content available on the url provided. Please use a different" +
-						 " url";
+						 	"\nNo content available on the url" +
+						 	" provided. Please use a different url.";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 	else {
-		const errorMsg = "Something went wrong. Please try again after sometime.";
+		const errorMsg = "Something went wrong. Please try again" +
+							" after sometime.";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 }
 
 
 function createTableRow(col1, col2) {
+
 	console.log('inputData', col1, col2);
 	const table__row = document.createElement('tr');
 	const table__data__1 = document.createElement('td');
@@ -91,13 +99,13 @@ function createTableRow(col1, col2) {
 
 
 function createAndDisplayErrorMsg(errTxt, errPara, errDiv) {
+
 	errPara.innerText = errTxt;
 	errDiv.classList.remove('hide');
 	errPara.classList.remove('hide');
 	resultSection.classList.remove("hide");
 	resultTable.classList.add("hide");
 }
-
 
 
 function refreshTable(telement) {
