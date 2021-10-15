@@ -38,6 +38,8 @@ function printResult(analysisResponse) {
 		resultTableBody.appendChild(tabFragment);
 		resultSection.classList.remove("hide");
 		resultTable.classList.remove("hide");
+		error1.classList.add('hide');
+		errMsg1.classList.add('hide');
 	}
 
 	else if (analysisResponse.status.code === '105') {
@@ -58,6 +60,12 @@ function printResult(analysisResponse) {
 	else if (analysisResponse.status.code === '205') {
 		const errorMsg = "Language not supported." +
 						 "\nLanguage detected not supported by the API";
+		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
+	}
+	else if (analysisResponse.status.code === '212') {
+		const errorMsg = "No content to analyze." +
+						 "\nNo content available on the url provided. Please use a different" +
+						 " url";
 		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	}
 	else {
@@ -85,6 +93,8 @@ function createAndDisplayErrorMsg(errTxt, errPara, errDiv) {
 	errPara.innerText = errTxt;
 	errDiv.classList.remove('hide');
 	errPara.classList.remove('hide');
+	resultSection.classList.remove("hide");
+	resultTable.classList.add("hide");
 }
 
 
