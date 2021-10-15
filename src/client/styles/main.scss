@@ -1,10 +1,10 @@
 @import 'var4main';
 @import 'tableStyles';
+@import 'layouts';
 
 body {
 	background-color: $background-color-light;
 	color: $primary-accent-color-dark;
-	height: 100vh;
 	font-family: $regular-text-family;
 	font-size: $regular-title-size;
 	font-weight: $regular-text-weight;
@@ -12,67 +12,62 @@ body {
 }
 
 header {
-	height: 10vh;
 	width: 100vw;
 	background-color: $background-color-medium;
 	color: $primary-accent-color-dark;
+	padding: 10px;
 
 	.main__heading {
 		font-family: $page-title-family;
 		font-size: $page-title-size;
 		font-weight: $page-title-weight;
-		padding: 0.8rem;
-		display: flex;
-		align-content: center;
-
-		&:hover {
-			color: $attention-accent-color;
-		}
+		text-align: center
 	}
+}
+
+section {
+	   padding: 5px 0 10px 0;
 }
 
 .btn {
 	background-color: $primary-accent-color-1;
 	color: $primary-accent-color-light;
 	border: none;
-	padding: 0.4rem 0.8rem;
 	text-decoration: none;
 	cursor: pointer;
-	// margin: 0.4rem 0.2rem;
-}
-
-.content__div {
-	padding: 0 0 0.8rem 0;
 }
 
 .hide {
 	display: none;
 }
 
+.errColor {
+	color: $error-accent-color;
+}
+
+.sub__heading {
+	font-family: $regular-title-family;
+	font-size: $regular-title-size;
+	font-weight: $regular-title-weight;
+	color: $primary-accent-color-1;
+}
+
 .body__content {
 
-	height: 80vh;
 	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	padding: 10px 0 0 10px;
 
-	section {
-		padding: 0 0.8rem 1.2rem 0.8rem;
-	}
-	.sub__heading {
-		font-family: $regular-title-family;
-		font-size: $regular-title-size;
-		font-weight: $regular-title-weight;
-		color: $primary-accent-color-1;
+	.process__heading {
+		padding: 0 0 5px 0;
 	}
 
 	.article__process__form {
 		.article__form {
+			padding: 0 0 5px 0;
 			input {
 				width: 50vw;
-				padding: 0.4rem 0.8rem;
-				margin: 0 0 0.4rem 0;
+				margin: 0 0 15px 0;
+				padding: 5px;
 				box-sizing: border-box;
 				border: 2px solid $background-color-dark;
 				background-color: $background-color-medium;
@@ -82,26 +77,27 @@ header {
 					background-color: $background-color-dark;
 					color: $primary-accent-color-light;
 				}
-			}
 
-			::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-				color: $primary-accent-color-dark;
+				&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $primary-accent-color-light;
 				opacity: 0.7; /* Firefox */
 				border: none;
-			}
+				}
 
-			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				&:-ms-input-placeholder { /* Internet Explorer 10-11 */
 				color: $primary-accent-color-dark;
 				opacity: 0.7;
-			}
+				}
 
-			::-ms-input-placeholder { /* Microsoft Edge */
+				&::-ms-input-placeholder { /* Microsoft Edge */
 				color: $primary-accent-color-dark;
 				opacity: 0.7;
+				}
 			}
 
 			.submitBtn {
 				width: 50vw;
+				padding: 5px;
 			}
 		}
 	}
@@ -110,7 +106,6 @@ header {
 footer {
 	background-color: $background-color-medium;
 	color: $primary-accent-color-dark;
-    position: fixed;
     width: 100vw;
     bottom: 0;
 }

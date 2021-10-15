@@ -2,17 +2,22 @@
 	width: 75%;
 	box-sizing: border-box;
 	border-spacing: 0;
+	border-collapse: collapse;
+
+	caption {
+		text-align: left;
+	}
 
 
 	&__head {
-		border-top: 2px solid $attention-accent-color;
-		border-bottom: 2px solid $attention-accent-color;
+		// border-top: 2px solid $attention-accent-color;
+		// border-bottom: 2px solid $attention-accent-color;
 		background-color: $background-color-medium;
 
 		th {
 			text-align: center;
 			padding: 0.8rem;
-			border: 2px solid $primary-accent-color-light;
+			border: 2px solid $background-color-medium;
 			border-top: 2px solid $attention-accent-color;
 			border-bottom: 2px solid $attention-accent-color;
 		}
@@ -21,8 +26,8 @@
 	&__body {
 		tr {
 			td {
-				padding: 0 0.4rem 0 0;
-				border: 2px solid $primary-accent-color-light;
+				padding: 5px;
+				border: 2px solid $background-color-medium;
 			}
 		}
 	}
