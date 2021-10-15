@@ -8,6 +8,7 @@ function printResult(analysisResponse) {
 
 	console.log(analysisResponse.status.code)
 	if (analysisResponse.status.code === '0') {
+		refreshTable(resultTableBody);
 		console.log('enter if 1');
 		const tabFragment = document.createDocumentFragment();
 
@@ -97,6 +98,13 @@ function createAndDisplayErrorMsg(errTxt, errPara, errDiv) {
 	resultTable.classList.add("hide");
 }
 
+
+
+function refreshTable(telement) {
+	while (telement.firstChild) {
+		telement.removeChild(telement.lastChild);
+	}
+}
 
 export{printResult};
 export{createTableRow};
