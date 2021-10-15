@@ -27,9 +27,13 @@ Please see Usage Section
 - [x] Select and add fonts
 - [x] Create a color scheme
 - [x] Add CSS file with fonts and colors
-- [ ] Add basic CSS layout
+- [x] Add basic CSS layout
 - [x] Install Webpack
 - [x] Setup Webpack config file
-- [ ] Create API credential
-- [ ] Test API using postman
-- [ ] Add creds to .env file
+- [x] Create API credential
+- [x] Test API using postman
+- [x] Add creds to .env file
+- [ ] Make layout responsive scss
+- [ ] Hide results until all results are ready to publish
+- [ ] Add test cases for JS scripts
+- [ ]
