@@ -1,3 +1,4 @@
+
 .main__page {
 	min-height: 100vh;
 	display: grid;
@@ -11,3 +12,27 @@
 		min-height: 50px;
 	}
 }
+
+.body__content {
+	display: grid;
+	grid-template-areas:
+		"s1"
+		"s2";
+	grid-template-rows: 1fr 1fr;
+
+	@include respond-screen-size("large") {
+		grid-template-areas:
+		"s1 s2";
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.article__processer {
+		grid-area: s1;
+	}
+
+	.analysis__result {
+		grid-area: s2;
+	}
+}
+
+
