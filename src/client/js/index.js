@@ -1,6 +1,6 @@
-// Gloal variables
 import {isValidURL} from './validateURL'
 import {printResult} from './printResults'
+
 
 console.log("js added");
 //Vars for user input
@@ -65,6 +65,7 @@ function submitForm(e) {
 event listener
 */
 artProcess.addEventListener('click', submitForm);
+
 
 export { submitForm }
 export { sendURLToServer }
