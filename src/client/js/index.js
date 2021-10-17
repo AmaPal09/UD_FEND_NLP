@@ -1,6 +1,6 @@
 import {isValidURL} from './validateURL'
 import {printResult} from './printResults'
-
+import {createAndDisplayErrorMsg} from './printResults'
 
 console.log("js added");
 //Vars for user input
@@ -56,6 +56,10 @@ function submitForm(e) {
 	  	}
 	  	else {
 	  		console.log("Please enter a valid URL");
+	  		const errorMsg = "Please enter a valid URL"
+	  		const error1 = document.getElementById('errorResult1');
+			const errMsg1 = document.getElementById('errorMsg1')
+	  		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
 	  	}
 	}
 }

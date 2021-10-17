@@ -116,3 +116,5 @@ function refreshTable(telement) {
 
 export{printResult};
 export{createTableRow};
+export{createAndDisplayErrorMsg};
+export{refreshTable};
