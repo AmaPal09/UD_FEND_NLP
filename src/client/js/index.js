@@ -56,7 +56,7 @@ function submitForm(e) {
 	  	}
 	  	else {
 	  		console.log("Please enter a valid URL");
-	  		const errorMsg = "Please enter a valid URL"
+	  		const errorMsg = "Please enter a valid URL."
 	  		const error1 = document.getElementById('errorResult1');
 			const errMsg1 = document.getElementById('errorMsg1')
 	  		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
