@@ -1,6 +1,8 @@
+// import style sheets
 // import './styles/resets.scss'
 import './styles/main.scss'
 
+// import js scripts
 import { isValidURL } from './js/validateURL'
 import { submitForm } from './js/index.js'
 import { sendURLToServer } from './js/index.js'
