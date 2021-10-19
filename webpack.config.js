@@ -1,3 +1,4 @@
+// Webpack configuration
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
@@ -6,10 +7,6 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
 	entry: './src/client/index.js',
-	// output: {
-	// 	path: path.resolve(__dirname, 'dist'),
-	// 	// filename: 'main.js',
-	// },
 	module: {
 		rules: [
 		//JavaScripts
