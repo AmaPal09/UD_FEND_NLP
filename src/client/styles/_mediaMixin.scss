@@ -1,12 +1,19 @@
+// Mixins
+
+// mixin responsive design
 @mixin respond-screen-size($breakpoint) {
+	// Set-up for medium screen size
 	@if($breakpoint == medium) {
 		@media (min-width: 640px) and (max-width: 1024px) {
 			@content
 		}
 	}
+	// Set-up for large screen size
 	@if($breakpoint == large) {
 		@media (min-width: 1024px) {
 			@content
 		}
 	}
+
+	// Default- small screen size
 }
