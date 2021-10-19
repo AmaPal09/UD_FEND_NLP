@@ -1,4 +1,5 @@
 //Server side JS code
+
 /*
 * ALL REQUIRED PACKAGES
 */
@@ -9,6 +10,7 @@ const dotenv = require('dotenv'); //Environment variables
 const fetch = require('node-fetch'); //fetch command to access API
 
 dotenv.config(); //configure env variables
+
 // GLOBAL VARIABLES
 const SENTIMENT_API = 'https://api.meaningcloud.com/sentiment-2.1';
 const SENTIMENT_API_KEY = process.env.SENTIMENT_API_KEY;
@@ -82,10 +84,6 @@ function sendResponse(analysisResponse, res) {
 	console.log("sendResponse function");
 	// console.log("analysis Response: ", analysisResponse);
 	const successMsg = "Post request receieved successfully";
-	// const results = {
-	// 	successMsg
-	// };
-	// res.send(results);
 	res.send(analysisResponse);
 }
 
