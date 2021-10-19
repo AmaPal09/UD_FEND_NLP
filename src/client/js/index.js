@@ -1,3 +1,4 @@
+// Imported files and functions
 import {isValidURL} from './validateURL'
 import {printResult} from './printResults'
 import {createAndDisplayErrorMsg} from './printResults'
@@ -71,5 +72,6 @@ event listener
 artProcess.addEventListener('click', submitForm);
 
 
+// Exported functions
 export { submitForm }
 export { sendURLToServer }

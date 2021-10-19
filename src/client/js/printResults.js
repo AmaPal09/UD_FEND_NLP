@@ -1,3 +1,11 @@
+// JS for printing messages and results to the screen
+
+/*
+* printResult FUNCTION
+* @description: Print analysis response in table form on client side
+* @param {json} analysisResponse: json with result to be printed
+* @returns {json} response: response from the server
+*/
 function printResult(analysisResponse) {
 	console.log('printResult statys');
 	const resultSection = document.getElementById('resultSection');
@@ -83,6 +91,12 @@ function printResult(analysisResponse) {
 }
 
 
+/*
+* createTableRow FUNCTION
+* @description: Populate table data in a table row with 2 columns
+* @param {string} col1: string content for table colum 1
+* @param  {string} col2: string content for table colum 2
+*/
 function createTableRow(col1, col2) {
 
 	console.log('inputData', col1, col2);
@@ -98,6 +112,16 @@ function createTableRow(col1, col2) {
 }
 
 
+/*
+* createAndDisplayErrorMsg FUNCTION
+* @description: Display error message on client side and hide any
+* 				table if present
+* @param {string} errTxt: error text message content,
+* @param  {string} errPara: document para element where the error
+*							message is displayed
+* @param  {string} errDiv: document div element where error para is
+*							nested
+*/
 function createAndDisplayErrorMsg(errTxt, errPara, errDiv) {
 
 	errPara.innerText = errTxt;
@@ -108,12 +132,19 @@ function createAndDisplayErrorMsg(errTxt, errPara, errDiv) {
 }
 
 
+/*
+* refreshTable FUNCTION
+* @description: Delete all children elements of table element
+* @param {document.elementNode} telement: Document element node
+*/
 function refreshTable(telement) {
 	while (telement.firstChild) {
 		telement.removeChild(telement.lastChild);
 	}
 }
 
+
+// Functions that are exported
 export{printResult};
 export{createTableRow};
 export{createAndDisplayErrorMsg};
