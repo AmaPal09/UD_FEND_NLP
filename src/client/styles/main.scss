@@ -1,9 +1,10 @@
+// Imported partials, mixis
 @import 'var4main';
 @import 'mediaMixin';
 @import 'tableStyles';
 @import 'layouts';
 
-
+// Root styles
 * {
 	padding: 0;
 	margin: 0;
@@ -18,9 +19,43 @@
 	}
 	line-height: 1.5;
 	letter-spacing: 0.03rem;
-	/*color: var(--regular-text-color);*/
 }
 
+
+// Custom class styles
+.copyrights {
+	&__statement {
+		font-size: $footer-copyrights-size;
+		font-weight: $footer-copyrights-weight;
+	}
+}
+
+// Custom button styles
+.btn {
+	background-color: $primary-accent-color-1;
+	color: $primary-accent-color-light;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.errColor {
+	color: $error-accent-color;
+}
+
+.sub__heading {
+	font-family: $regular-title-family;
+	font-size: $regular-title-size;
+	font-weight: $regular-title-weight;
+	color: $primary-accent-color-1;
+}
+
+
+// Custom styles for page sections
 body {
 	background-color: $background-color-light;
 	color: $primary-accent-color-dark;
@@ -52,29 +87,6 @@ section {
 	   @include respond-screen-size("large") {
 			padding: 15px 0 20px 0;
 		}
-}
-
-.btn {
-	background-color: $primary-accent-color-1;
-	color: $primary-accent-color-light;
-	border: none;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.hide {
-	display: none;
-}
-
-.errColor {
-	color: $error-accent-color;
-}
-
-.sub__heading {
-	font-family: $regular-title-family;
-	font-size: $regular-title-size;
-	font-weight: $regular-title-weight;
-	color: $primary-accent-color-1;
 }
 
 .body__content {
@@ -137,6 +149,7 @@ section {
 	}
 }
 
+// Footer styles
 footer {
 	background-color: $background-color-medium;
 	color: $primary-accent-color-dark;
@@ -146,11 +159,4 @@ footer {
 		padding: 15px;
 	}
     bottom: 0;
-}
-
-.copyrights {
-	&__statement {
-		font-size: $footer-copyrights-size;
-		font-weight: $footer-copyrights-weight;
-	}
 }
