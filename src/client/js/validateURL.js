@@ -1,3 +1,5 @@
+// JS for vaidating URL
+
 /*
 * isValidURL FUNCTION
 * @description: Validates if the user input is an URL
@@ -16,4 +18,6 @@ function isValidURL(inputURL) {
 	return pattern.test(inputURL);
 }
 
+
+// Functions to be exported
 export {isValidURL}
