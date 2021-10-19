@@ -1,3 +1,4 @@
+// Table Style Sheet
 .result__table {
 	width: 75%;
 	box-sizing: border-box;
@@ -8,10 +9,7 @@
 		text-align: left;
 	}
 
-
 	&__head {
-		// border-top: 2px solid $attention-accent-color;
-		// border-bottom: 2px solid $attention-accent-color;
 		background-color: $background-color-medium;
 
 		th {
