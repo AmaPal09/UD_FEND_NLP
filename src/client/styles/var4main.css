@@ -7,7 +7,6 @@
 	font-size: 18px;
 	line-height: 1.5;
 	letter-spacing: 0.03rem;
-	/*color: var(--regular-text-color);*/
 }
 
 :root {
@@ -50,13 +49,4 @@
 	--background-color-light: #d8d9dc;
 	--background-color-medium: #455065;
 	--background-color-dark: #262d3d;
-
-	/*--page-title-color: #f4f312;
-	--regular-title-color: #f4f312;
-	--regular-text-color: #fffeff;
-	--special-text-color: #07151a;
-	--special-background-color: #ebf5fa;
-	--shadow-color: #215d78;
-	--error-color: #b4324b;
-*/
 }
