@@ -31,10 +31,13 @@
 					<p> Enter the article you wish analyse below and detect its sentiments</p>
 				</div>
 				<div class="article__process__form content__div">
-					<form class="article__form">
+					<form class="article__form" onsubmit="return Client.submitForm(event)">
 						<label for="artURL">Article to be processed:</label> <br>
 						<input type="text" id="artURL" name="artURL" value="" placeholder="Please enter the URL here"> <br>
-						<button id="artProcess" type="submit" class="btn submitBtn">Analyse Article</button>
+						<button id="artProcess" type="submit" class="btn submitBtn"
+						 onclick="return Client.submitForm(event)" onsubmit="return Client.submitForm(event)">
+							Analyse Article
+						</button>
 					</form>
 				</div>
 			</section>

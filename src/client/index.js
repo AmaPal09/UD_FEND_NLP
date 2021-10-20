@@ -12,3 +12,8 @@ export{createTableRow} from './js/printResults.js'
 // alert("I exist");
 console.log("New index file used as entry point");
 // alert("Hi there!");
+
+export {
+	isValidURL,
+	submitForm
+}

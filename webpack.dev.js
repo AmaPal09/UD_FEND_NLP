@@ -9,12 +9,14 @@ module.exports = merge(common, {
 		path: path.resolve(__dirname, 'dist'),
     	filename: '[name].bundle.js',
     	clean: true,
+    	libraryTarget: 'var',
+	    library: 'Client'
   	},
 	// devtool: 'source-map',
 	devtool: 'inline-source-map', //from documentation
 	devServer: {
 		static: './dist',
-		port: '3000',
+		// port: '3000',
 	},
 });
 

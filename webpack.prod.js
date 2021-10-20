@@ -10,5 +10,7 @@ module.exports = merge(common, {
 		path: path.resolve(__dirname, 'dist'),
     	filename: '[name].[contenthash].bundle.js',
     	clean: true,
+    	libraryTarget: 'var',
+	    library: 'Client',
   	},
 });

@@ -48,12 +48,12 @@ function submitForm(e) {
     	console.log('Enter a URL');
     }
     else {
-    	if (isValidURL(arturl)) {
+    	if (Client.isValidURL(arturl)) {
 	    	console.log("value entered", arturl);
 	    	const data = {
 	    		arturl
 	    	}
-	  		sendURLToServer('/artProcess', data)
+	  		sendURLToServer('http://localhost:3000/artProcess', data)
 	  	}
 	  	else {
 	  		console.log("Please enter a valid URL");
@@ -69,7 +69,7 @@ function submitForm(e) {
 /*
 event listener
 */
-artProcess.addEventListener('click', submitForm);
+// artProcess.addEventListener('click', submitForm);
 
 
 // Exported functions
