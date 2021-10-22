@@ -2,6 +2,7 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.config.js');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = merge(common, {
 	mode: 'development',
@@ -18,5 +19,17 @@ module.exports = merge(common, {
 		static: './dist',
 		// port: '3000',
 	},
+	module: {
+		rules: [
+			//Sass
+			{
+				test: /\.scss$/,
+				use: ['style-loader', 'css-loader', 'sass-loader']
+			},
+		]
+	},
+	plugins: [
+		new CleanWebpackPlugin(),
+	],
 });
 
