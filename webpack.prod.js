@@ -5,6 +5,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 
@@ -28,6 +29,7 @@ module.exports = merge(common, {
   	},
 	plugins: [
 		new MiniCssExtractPlugin({ filename: "[name].css" }),
+		new WorkboxPlugin.GenerateSW(),
 	],
 	optimization: {
     	minimize: true,
