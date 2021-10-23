@@ -4,7 +4,7 @@
   "description": "Evaluate-news-nlp",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack",
     "start": "node src/server/index.js",
     "build-dev": "webpack serve --config webpack.dev.js --open",
@@ -31,6 +31,7 @@
     "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
     "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.3.1",
     "mini-css-extract-plugin": "^2.4.2",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
