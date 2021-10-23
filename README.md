@@ -12,13 +12,13 @@
 
 ## Description
 ### Languages used
-	- JS
-	- CSS
-	- HTML
-	- SCSS
+- JS
+- CSS
+- HTML
+- SCSS
 ### Tools used
-	- Webpack 5
-	- Jest
+- Webpack 5
+- Jest
 
 ## Project Requirements
 ### Architecture
