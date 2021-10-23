@@ -7,17 +7,17 @@
 * @returns {json} response: response from the server
 */
 function printResult(analysisResponse) {
-	console.log('printResult statys');
+	// console.log('printResult statys');
 	const resultSection = document.getElementById('resultSection');
 	const resultTable = document.getElementById('resultTable');
 	const resultTableBody = document.getElementById('resultTableBody');
 	const error1 = document.getElementById('errorResult1');
 	const errMsg1 = document.getElementById('errorMsg1')
 
-	console.log(analysisResponse.status.code)
+	// console.log(analysisResponse.status.code)
 	if (analysisResponse.status.code === '0') {
 		refreshTable(resultTableBody);
-		console.log('enter if 1');
+		// console.log('enter if 1');
 		const tabFragment = document.createDocumentFragment();
 
 		if (analysisResponse.model) {
@@ -99,7 +99,7 @@ function printResult(analysisResponse) {
 */
 function createTableRow(col1, col2) {
 
-	console.log('inputData', col1, col2);
+	// console.log('inputData', col1, col2);
 	const table__row = document.createElement('tr');
 	const table__data__1 = document.createElement('td');
 	table__data__1.innerText = col1;
