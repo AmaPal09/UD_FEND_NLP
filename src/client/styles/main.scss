@@ -52,6 +52,7 @@
 	font-size: $regular-title-size;
 	font-weight: $regular-title-weight;
 	color: $primary-accent-color-1;
+	// text-align: center;
 }
 
 
@@ -111,7 +112,11 @@ section {
 				padding: 0 0 10px 0;
 			}
 			input {
-				width: 50vw;
+				// width: 50vw;
+				width: 75vw;
+				@include respond-screen-size("large") {
+					width: 40vw;
+				}
 				margin: 0 0 15px 0;
 				padding: 5px;
 				box-sizing: border-box;
@@ -142,7 +147,10 @@ section {
 			}
 
 			.submitBtn {
-				width: 50vw;
+				width: 75vw;
+				@include respond-screen-size("large") {
+					width: 40vw;
+				}
 				padding: 5px;
 			}
 		}

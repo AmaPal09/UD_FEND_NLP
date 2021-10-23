@@ -24,15 +24,17 @@
 
 		<!--Content section of the main page-->
 		<main class="body__content">
-			<section id="artProcessor" class="article__processer">
+			<section class="content__script">
 				<div class="process__heading content__div">
 					<h2 class="sub__heading">Sentiment analysis of your article</h2>
 					<p>Analyse the sentiments in the article you are reading and understand the tone, attitude and opinion of it using NLP(Natural Language Programming).  Meaning Clouds's sentiment analysis API is used to perform the analysis.</p>
 					<p> Enter the article you wish analyse below and detect its sentiments</p>
 				</div>
+			</section>
+			<section id="artProcessor" class="article__processer">
 				<div class="article__process__form content__div">
 					<form class="article__form" onsubmit="return Client.submitForm(event)">
-						<label for="artURL">Article to be processed:</label> <br>
+						<label for="artURL" class="sub__heading">Article to be processed:</label> <br>
 						<input type="text" id="artURL" name="artURL" value="" placeholder="Please enter the URL here"> <br>
 						<button id="artProcess" type="submit" class="btn submitBtn"
 						 onclick="return Client.submitForm(event)" onsubmit="return Client.submitForm(event)">
