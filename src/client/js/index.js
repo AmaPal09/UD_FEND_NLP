@@ -28,7 +28,7 @@ const sendURLToServer = async (url = '', data = {}) => {
 		});
 		try {
 			const results = await response.json();
-			console.log(results);
+			// console.log(results);
 			printResult(results);
 
 		}catch(error){
@@ -43,8 +43,12 @@ const sendURLToServer = async (url = '', data = {}) => {
 */
 function submitForm(e) {
     e.preventDefault();
-    const arturl = artURL.value;
+    const arturl = articleURL.value;
     if (arturl == ""){
+    	const errorMsg = "Please enter a URL."
+  		const error1 = document.getElementById('errorResult1');
+		const errMsg1 = document.getElementById('errorMsg1')
+  		createAndDisplayErrorMsg(errorMsg, errMsg1, error1);
     	console.log('Enter a URL');
     }
     else {
