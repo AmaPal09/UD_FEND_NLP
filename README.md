@@ -8,6 +8,7 @@
 * [Usage](#usage)
 * [Future Enhancements](#future-enhancements)
 * [Development TODO](#Development-todo)
+* [References](#Reference-material)
 
 
 ## Description
@@ -125,3 +126,36 @@ Good to have features for future enhancements
 - [x] Make layout responsive scss
 - [x] Hide results until all results are ready to publish
 - [x] Add test cases for JS scripts
+
+## References
+1) [Form and button](https://www.w3schools.com/html/html_form_input_types.asp)
+
+2) [url validation](https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url)
+
+3)ReferenceError: regeneratorRuntime is not defined
+[Reference 1](https://stackoverflow.com/questions/33527653/babel-6-regeneratorruntime-is-not-defined
+https://babeljs.io/docs/en/babel-plugin-transform-runtime)
+[Reference 2 solution 3 here](https://exerror.com/babel-referenceerror-regeneratorruntime-is-not-defined/)
+
+4) [Webpack mode set-up references](https://webpack.js.org/guides/production/)
+
+5)scss resets
+- udacity sass lesson
+
+6) [Fevicon set-up](https://www.npmjs.com/package/favicons-webpack-plugin)
+
+7) node-fetch issues
+[Referred this code.](https://stackoverflow.com/questions/61558835/type-module-in-package-json-throw-new-err-require-esmfilename-parentpath)
+However went to the older version. Could not find how to make version 3.0.0 work
+
+8) [dotenv](https://www.npmjs.com/package/dotenv)
+
+
+9) [Refreshing table before adding new data](https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript)
+
+10) grid layout using mixins:
+[Reference 1](https://sass-lang.com/documentation/at-rules/mixin)
+[Reference 2](https://dev.to/paul_duvall/sass-and-media-queries-hb2)
+
+
+11) [Webpack output set-up](https://webpack.js.org/concepts/entry-points/#single-entry-shorthand-syntax)
