@@ -81,7 +81,7 @@ app.post('/artProcess', async(req, res) => {
 * @param res: response sent with details of status and data
 */
 function sendResponse(analysisResponse, res) {
-	console.log("sendResponse function");
+	// console.log("sendResponse function");
 	// console.log("analysis Response: ", analysisResponse);
 	const successMsg = "Post request receieved successfully";
 	res.send(analysisResponse);
@@ -95,22 +95,15 @@ function sendResponse(analysisResponse, res) {
 * @return {json} newData: sentiment analysis response received from API
 */
 const fetchAnalysis = async (inurl = '') => {
-	console.log("enter fetchAnalysis");
-	console.log(inurl);
+	// console.log("enter fetchAnalysis");
+	// console.log(inurl);
 
 	// console.log(`${SENTIMENT_API}?key=${SENTIMENT_API_KEY}&url=${inurl}&lang=auto`);
 	const response = await fetch( `${SENTIMENT_API}?key=${SENTIMENT_API_KEY}&url=${inurl}&lang=auto`, {method: 'POST'})
 
 	try {
-		console.log("Processing response");
+		// console.log("Processing response");
 		const newData = await response.json();
-		console.log(newData.status);
-		console.log(newData.model);
-		console.log(newData.score_tag);
-		console.log(newData.agreement);
-		console.log(newData.subjectivity);
-		console.log(newData.confidence);
-		console.log(newData.irony);
 		return newData;
 	}catch(error) {
 		console.log("error", error);
