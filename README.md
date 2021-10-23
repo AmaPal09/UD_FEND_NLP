@@ -22,7 +22,7 @@
 
 ## Project Requirements
 ### Architecture
-Project files should be places in src folders, seperate for client
+Project files should be placed in src folders, seperate for client
 and server. Client side files should be categorized as per code
 type.
 Prod files should be populated in `/dist` at root level.
