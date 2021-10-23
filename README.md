@@ -11,15 +11,14 @@
 
 
 ## Description
-**Languages used**
-- JS
-- CSS
-- HTML
-- SCSS
-**Tools used**
-- Webpack 5
-- Jest
--
+- **Languages used**
+	- JS
+	- CSS
+	- HTML
+	- SCSS
+- **Tools used**
+	- Webpack 5
+	- Jest
 
 ## Project Requirements
 - Architecture
