@@ -11,35 +11,35 @@
 
 
 ## Description
-###Languages used###
+###Languages used
 	- JS
 	- CSS
 	- HTML
 	- SCSS
-###Tools used###
+###Tools used
 	- Webpack 5
 	- Jest
 
 ## Project Requirements
-###Architecture###
+###Architecture
 	Project files should be places in src folders, seperate for client and server. Client side files should be categorized as per code type.
 	Prod files should be populated in `/dist` at root level.
-###Configs###
+###Configs
 	Seperate webpack config files should be present for dev and prod.
-###Content###
+###Content
 	Web app should contain only 1 html file, atleast 2 Javascript files, atleast one scss file that styles the code.
 	All files and folders must be found by webpack
-###API###
+###API
 	Web app should make a successful API fetch call from server side.
 	Server should find required API keys. Request to make the API call
 	should be sent by user from client side.
 	Response to the API call must be displayed on client side.
-###Offline Functionality###
+###Offline Functionality
 	The project must have set up service workers in webpack.
-###Testing###
+###Testing
 	Project must have Jest installed, there should be a npm script to run Jest, and all tests must pass.
 	Every js file in `src/js/` should have at least one test.
-###Interactions###
+###Interactions
 	HTML should have a single field form that uses the correct html tags and structure. There should validation of the form input and helpful error messages.
 
 ## Demo
@@ -47,13 +47,13 @@ Please see Usage Section
 
 
 ## Code Examples
-###Async fetch function on server side###
+###Async fetch function on server side
 	Async function ```fetchAnalysis``` in `src/server/index.js` makes a
 	fetch request to the Meanings Cloud API. It uses the API keys from
 	.env file to make the request.
 	Check the fetchAnalysis function [here](https://github.com/AmaPal09/UD_FEND_NLP/blob/fc89c71a0e8283b4445316045f7901c511cb106b/src/server/index.js#L91-L111).
 	Check how API key was accessed [here](https://github.com/AmaPal09/UD_FEND_NLP/blob/fc89c71a0e8283b4445316045f7901c511cb106b/src/server/index.js#L9-L16).
-###REGEX URL validation###
+###REGEX URL validation
 	Function `isValidURL` in `src/client/js/validateURL.js` validates
 	if the user provided url is a valide url
 	Check the `isValidURL` [here](https://github.com/AmaPal09/UD_FEND_NLP/blob/trunk/src/client/js/index.js).
