@@ -96,7 +96,8 @@ Please see Usage Section
 	```
 
 
-## Good to have features for future enhancements
+## Future Enhancements
+Good to have features for future enhancements
 - [ ] Add different fevicons for different screen sizes
 - [ ] Add social media links to footer
 - [ ] Add test cases for async function
@@ -106,7 +107,7 @@ Please see Usage Section
 - [ ] Deployment to Horeku
 
 
-## DEVELOPMENT TODO
+## Development TODO
 - [x] Add a README.md
 - [x] Select and add fonts
 - [x] Create a color scheme
