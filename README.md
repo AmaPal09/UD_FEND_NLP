@@ -11,12 +11,12 @@
 
 
 ## Description
-###Languages used
+### Languages used
 	- JS
 	- CSS
 	- HTML
 	- SCSS
-###Tools used
+### Tools used
 	- Webpack 5
 	- Jest
 
