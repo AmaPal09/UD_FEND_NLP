@@ -103,6 +103,7 @@ Function `isValidURL` in `src/client/js/validateURL.js` validates
 
 ## Future Enhancements
 Good to have features for future enhancements
+- [ ] Add Workbox-Plugin and its supporting constructor code here for initiating service-workers in development envrionment.
 - [ ] Add different fevicons for different screen sizes
 - [ ] Add social media links to footer
 - [ ] Add test cases for async function
