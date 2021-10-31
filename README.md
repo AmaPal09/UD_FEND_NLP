@@ -133,14 +133,14 @@ Good to have features for future enhancements
 
 2) [url validation](https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url)
 
-3)ReferenceError: regeneratorRuntime is not defined
+3) ReferenceError: regeneratorRuntime is not defined
 [Reference 1](https://stackoverflow.com/questions/33527653/babel-6-regeneratorruntime-is-not-defined
 https://babeljs.io/docs/en/babel-plugin-transform-runtime)
 [Reference 2 solution 3 here](https://exerror.com/babel-referenceerror-regeneratorruntime-is-not-defined/)
 
 4) [Webpack mode set-up references](https://webpack.js.org/guides/production/)
 
-5)scss resets
+5) scss resets
 - udacity sass lesson
 
 6) [Fevicon set-up](https://www.npmjs.com/package/favicons-webpack-plugin)
