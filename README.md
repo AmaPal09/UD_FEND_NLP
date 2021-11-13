@@ -6,6 +6,7 @@
 * [Demo](#demo)
 * [Code Examples](#code-examples)
 * [Usage](#usage)
+* [Testing](#testing)
 * [Future Enhancements](#future-enhancements)
 * [Development TODO](#Development-todo)
 * [References](#Reference-material)
@@ -95,7 +96,9 @@ Function `isValidURL` in `src/client/js/validateURL.js` validates
 10. To see the client side
 	Run the command on step 9, the open your preferred browser
 	and go to http://localhost:3000/
-11. To test the project
+
+## Testing
+1. To test the project
 	```
 		npm run test
 	```
@@ -151,12 +154,10 @@ However went to the older version. Could not find how to make version 3.0.0 work
 
 8) [dotenv](https://www.npmjs.com/package/dotenv)
 
-
 9) [Refreshing table before adding new data](https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript)
 
 10) grid layout using mixins:
 [Reference 1](https://sass-lang.com/documentation/at-rules/mixin)
 [Reference 2](https://dev.to/paul_duvall/sass-and-media-queries-hb2)
-
 
 11) [Webpack output set-up](https://webpack.js.org/concepts/entry-points/#single-entry-shorthand-syntax)
